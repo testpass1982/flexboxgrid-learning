@@ -1,0 +1,11 @@
+.red {
+  background-color: red;
+  padding: 5px; }
+
+.solid-border {
+  border: solid 1px blue; }
+
+.bg-white {
+  padding: 5px;
+  background-color: #fff;
+  border: solid 1px black; }
