@@ -1,0 +1,52 @@
+body, html {
+    width: fit-content;
+    min-width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    }
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.content-center {
+    align-content: center;
+}
+
+.flex-distributed {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-sm-center {
+    @media screen and (max-width: 575px) {
+        text-align: center;
+    }
+}
+
+.h100 {
+    height: 100px;
+}
