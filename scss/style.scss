@@ -45,11 +45,9 @@
 }
 
 .main-content__nav-menu--menu-item {
-    box-sizing: border-box;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 3px;
-    // padding-right: 16px;
     line-height: 24px;
     letter-spacing: 0.84px;
     font-size: 14px;
@@ -63,6 +61,10 @@
         @media screen and (max-width: 1252px) {
             padding-top: 10px;
             padding-bottom: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            border-bottom: transparent;
         }
 }
 
@@ -164,6 +166,27 @@
     margin-top: 45px;
     margin-bottom: 24px;
     padding-left: 10px;
+}
+
+.main-content__org_info {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.96px;
+    padding-bottom: 26px;
+    padding-left: 10px;
+}
+
+.main-content__org_info--button {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 18px 14px 18px;
+    border: white solid 1px;
+    border-radius: 3px;
+    &:hover {
+        background-color: white;
+        color: #363a3f;
+    }
 }
 
 
