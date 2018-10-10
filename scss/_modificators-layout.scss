@@ -13,9 +13,17 @@ body {
     padding-left: 10px;
 }
 
+.pr5 {
+    padding-right: 5px;
+}
+.pl5 {
+    padding-left: 5px;
+}
+
 .pb5 {
     padding-bottom: 5px;
 }
+
 
 .mb5 {
     margin-bottom: 5px;
@@ -49,4 +57,14 @@ body {
 
 .h100 {
     height: 100px;
+}
+
+.disp-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.greedy {
+    flex-grow: 1;
 }

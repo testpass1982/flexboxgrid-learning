@@ -14,6 +14,12 @@ body {
 .pl10 {
   padding-left: 10px; }
 
+.pr5 {
+  padding-right: 5px; }
+
+.pl5 {
+  padding-left: 5px; }
+
 .pb5 {
   padding-bottom: 5px; }
 
@@ -43,6 +49,14 @@ body {
 
 .h100 {
   height: 100px; }
+
+.disp-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.greedy {
+  flex-grow: 1; }
 
 .highlighted {
   color: silver; }
@@ -162,7 +176,7 @@ body {
 
 .main-content__nav-menu--menu-item {
   box-sizing: border-box;
-  padding-top: 38px;
+  padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 3px;
   line-height: 24px;
@@ -172,6 +186,93 @@ body {
   white-space: nowrap; }
   .main-content__nav-menu--menu-item:hover {
     border-bottom: 2px solid #609eef; }
+  @media screen and (max-width: 1252px) {
+    .main-content__nav-menu--menu-item {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
 .main-content__nav-menu--container {
   padding-bottom: 5px; }
+
+.main-content__search-input {
+  position: relative;
+  width: 100%;
+  line-height: 34px;
+  color: white;
+  margin: 0px 10px 0px 0px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 5px 5px 30px;
+  border: none; }
+
+.main_content__search_icon {
+  position: absolute;
+  top: 15px;
+  left: 25px; }
+  .main_content__search_icon::placeholder {
+    color: red; }
+
+.main_content__org_info--container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 35px; }
+
+.main_content__org_info--naks-logo-image {
+  padding: 10px 10px;
+  float: left; }
+
+.main-content__org_info--naks-member-text {
+  color: #bcbfc8;
+  padding: 10px 10px;
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+  text-transform: uppercase; }
+
+.naks-site-addr {
+  color: white;
+  text-transform: lowercase; }
+
+.main-content__org_info--org-activities {
+  width: 100%;
+  max-width: 400px;
+  background-color: #2d7de6;
+  color: white;
+  padding: 33px 30px 33px 32px;
+  margin: 15px 0px 0px 10px;
+  background-image: url(/img/org-activities-right-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  border-radius: 3px;
+  flex-basis: 48%; }
+  @media screen and (max-width: 576px) {
+    .main-content__org_info--org-activities {
+      flex-basis: 95%; } }
+  .main-content__org_info--org-activities:hover {
+    box-shadow: inset 0px 0px 0px 2px #8bb2e6; }
+
+.main-content__org_info--activities_header {
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 37px;
+  padding-left: 15px; }
+
+.main-content__org_info--attention {
+  text-align: left;
+  line-height: 16px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  margin-left: 10px; }
+  .main-content__org_info--attention:hover {
+    box-shadow: inset 0px 0px 0px 2px #fff; }
+
+.main-content__org_name {
+  font-size: 28px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 1.68px;
+  margin-top: 45px;
+  margin-bottom: 24px;
+  padding-left: 10px; }
