@@ -14,3 +14,21 @@
     color: blue;
     border: blue;
 }
+
+.underlined {
+    border-bottom: 2px solid #fff;
+
+    &:hover {
+        // box-shadow:  0px 0px 0px 2px #609eef;
+        border-bottom: 2px solid #609eef;
+    }
+
+    @media screen and (max-width: 1252px) {
+        border-bottom: transparent;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-bottom: transparent;
+        }
+    }
+
+}
