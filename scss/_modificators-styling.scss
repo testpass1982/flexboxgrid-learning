@@ -32,3 +32,27 @@
     }
 
 }
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+@mixin gradient-overlay($color1, $color2, $transparency) {
+    &:before {
+        content : '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, $color1, $color2);
+        opacity: $transparency;
+        display: block;
+        position: absolute;
+    }
+}

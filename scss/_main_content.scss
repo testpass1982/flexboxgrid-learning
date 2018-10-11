@@ -5,7 +5,7 @@
     height: 100%;
     background: url(/img/main_cont__cont-bg-image.jpg) center center no-repeat;
     background-size: cover;
-    margin-bottom: 63px;
+    margin-bottom: 30px;
         &:before {
             content : '';
             position: absolute;
@@ -95,7 +95,7 @@
 
 .main-content__org_info--org-activities {
     width: 100%;
-    max-width: 400px;
+    // max-width: 400px;
     min-height: 100px;
     background-color: #2d7de6;
     color: white;
@@ -163,7 +163,7 @@
     width: 100%;
     max-width: 280px;
     padding: 14px 18px 14px 18px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-left: 10px;
     border: white solid 1px;
     border-radius: 3px;
