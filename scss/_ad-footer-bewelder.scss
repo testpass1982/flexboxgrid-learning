@@ -1,0 +1,144 @@
+@import "_modificators-styling.scss";
+
+.footer__bewelder-ad-footer {
+    padding-top: 40px;
+        @include responsive-bg-image('/img/bewelder-bg-picture.png');
+        @media screen and (max-width:540px) {
+            background: none;
+        }
+}
+
+.footer__ask-question--area--container {
+    @media screen and (max-width: 540px) {
+        padding: 30px;
+        margin-bottom: 10px;
+        @include responsive-bg-image('/img/ask-a-question-area-bg.png');
+    }
+}
+
+.footer__bewelder--area--container {
+    @media screen and (max-width: 540px) {
+        padding: 30px;
+        margin-bottom: 10px;
+        @include responsive-bg-image('/img/bewelder-area-bg.png');
+    }
+}
+
+.footer__welding-magazine--area--container {
+    @media screen and (max-width: 540px) {
+        padding: 30px;
+        margin-bottom: 10px;
+        @include responsive-bg-image('/img/welder-mag-area-bg.png');
+    }
+}
+
+.footer__do-you-have-a-question--heading {
+    font-size: 24px;
+    font-style: Medium;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    // padding-top: 47px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    color: white;
+    flex: 0 0 60%;
+}
+.footer__use-a-question-form--text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.84px;
+    // font-weight: 100;
+    padding-bottom: 43px;
+    color: white;
+    flex: 0 0 60%;
+}
+
+.footer__ask-question--button {
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    line-height: 18px;
+    letter-spacing: .84px;
+    background-color: #3b8fee;
+    border-radius: 3px;
+    color: white;
+    max-width: 160px;
+    text-align: center;
+    flex: 0 0 40%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        &:hover {
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+        }
+}
+
+.footer__bewelder-area--heading {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    flex: 0 0 50%;
+}
+
+.footer__bewelder-area-bewelder-ru--url {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding-bottom: 20px;
+    flex: 1 0 80%;
+}
+
+.footer__bewelder-area-post-vacancy--url {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+    padding-bottom: 30px;
+}
+
+.footer__bewelder-area-find-job--button {
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    line-height: 18px;
+    letter-spacing: .84px;
+    background-color: #ffdc4e;
+    border-radius: 3px;
+    color: black;
+    max-width: 160px;
+    font-weight: bold;
+    text-align: center;
+    flex: 0 0 40%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        &:hover {
+            box-shadow: 0 0 30px rgb(255, 255, 0);
+        }
+}
+
+.footer__welding-magazine-area--heading {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.48px;
+    &:hover {
+        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.footer__welding-magazine-area--sub-heading {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.84px;
+}
+
+.footer__welding-magazine-area--logo {
+    margin-bottom: 24px;
+    padding-right: 39px;
+}

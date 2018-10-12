@@ -337,10 +337,10 @@ body {
   padding-bottom: 29px; }
   .news__news-heading:hover {
     border-color: #408ff6; }
-    .news__news-heading:hover .line-rect {
+    .news__news-heading:hover .news__line-rect {
       border-color: #408ff6; }
 
-.line-rect {
+.news__line-rect {
   position: absolute;
   border-top: 6px solid #97c2fa;
   width: 73px; }
@@ -368,12 +368,27 @@ body {
 
 .news__tags--container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  align-items: stretch;
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 19px;
   font-size: 14px;
   line-height: 24px; }
+
+.news__date {
+  flex: 0 0 30%; }
+  @media screen and (max-width: 380px) {
+    .news__date {
+      flex: 1 0 100%; } }
+
+.news__tag {
+  text-align: right;
+  flex: 0 0 70%; }
+  @media screen and (max-width: 380px) {
+    .news__tag {
+      flex: 1 0 100%;
+      text-align: left; } }
 
 .news__news-record-with-picture {
   position: relative; }
@@ -391,7 +406,7 @@ body {
 .news__picture {
   width: 100%; }
 
-.news_news-record-with-picture--heading {
+.news__news-record-with-picture--heading {
   position: absolute;
   color: white;
   font-size: 16px;
@@ -401,7 +416,7 @@ body {
   bottom: 0;
   left: 30px; }
 
-.news_news-record-with-picture--button {
+.news__news-record-with-picture--button {
   position: absolute;
   color: white;
   border: white 1px solid;
@@ -410,5 +425,225 @@ body {
   margin-bottom: 30px;
   bottom: 0;
   left: 30px; }
-  .news_news-record-with-picture--button:hover {
+  .news__news-record-with-picture--button:hover {
     box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67); }
+
+.news__article-record-container {
+  padding-bottom: 36px;
+  padding-left: 25px;
+  padding-right: 30px; }
+
+.news__article-record-heading {
+  line-height: 26px;
+  font-size: 20px;
+  letter-spacing: 0.37px;
+  font-weight: bold;
+  padding-bottom: 19px; }
+
+.news__article-record-sub-heading--container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.news__article-record-sub-heading {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.24px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  flex-grow: 2;
+  flex-basis: 60%; }
+
+.news__article-record__read-more-button {
+  padding: 12px 12px;
+  border: #56668f 1px solid;
+  border-radius: 3px;
+  color: #56668f;
+  max-width: 107px;
+  flex-grow: 1; }
+  .news__article-record__read-more-button:hover {
+    background-color: #56668f;
+    color: white; }
+
+.highlighted {
+  color: silver; }
+
+.bsolid {
+  border: 1px solid black; }
+
+.solid-border {
+  border: solid 1px blue; }
+
+.box {
+  color: blue;
+  border: blue; }
+
+.underlined {
+  border-bottom: 2px solid #fff; }
+  .underlined:hover {
+    border-bottom: 2px solid #609eef; }
+  @media screen and (max-width: 1252px) {
+    .underlined {
+      border-bottom: transparent; }
+      .underlined:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-bottom: transparent; } }
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  margin-left: 10px;
+  text-transform: uppercase; }
+
+.footer__bewelder-ad-footer {
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  background-image: url("/img/bewelder-bg-picture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: block; }
+  @media screen and (max-width: 540px) {
+    .footer__bewelder-ad-footer {
+      background: none; } }
+
+@media screen and (max-width: 540px) {
+  .footer__ask-question--area--container {
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    background-image: url("/img/ask-a-question-area-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: block; } }
+
+@media screen and (max-width: 540px) {
+  .footer__bewelder--area--container {
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    background-image: url("/img/bewelder-area-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: block; } }
+
+@media screen and (max-width: 540px) {
+  .footer__welding-magazine--area--container {
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    background-image: url("/img/welder-mag-area-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: block; } }
+
+.footer__do-you-have-a-question--heading {
+  font-size: 24px;
+  font-style: Medium;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  color: white;
+  flex: 0 0 60%; }
+
+.footer__use-a-question-form--text {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.84px;
+  padding-bottom: 43px;
+  color: white;
+  flex: 0 0 60%; }
+
+.footer__ask-question--button {
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  line-height: 18px;
+  letter-spacing: .84px;
+  background-color: #3b8fee;
+  border-radius: 3px;
+  color: white;
+  max-width: 160px;
+  text-align: center;
+  flex: 0 0 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .footer__ask-question--button:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.footer__bewelder-area--heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.36px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  flex: 0 0 50%; }
+
+.footer__bewelder-area-bewelder-ru--url {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding-bottom: 20px;
+  flex: 1 0 80%; }
+
+.footer__bewelder-area-post-vacancy--url {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.84px;
+  padding-bottom: 30px; }
+
+.footer__bewelder-area-find-job--button {
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  line-height: 18px;
+  letter-spacing: .84px;
+  background-color: #ffdc4e;
+  border-radius: 3px;
+  color: black;
+  max-width: 160px;
+  font-weight: bold;
+  text-align: center;
+  flex: 0 0 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .footer__bewelder-area-find-job--button:hover {
+    box-shadow: 0 0 30px yellow; }
+
+.footer__welding-magazine-area--heading {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.48px; }
+  .footer__welding-magazine-area--heading:hover {
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8); }
+
+.footer__welding-magazine-area--sub-heading {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.84px; }
+
+.footer__welding-magazine-area--logo {
+  margin-bottom: 24px;
+  padding-right: 39px; }
+
+.main-footer--container {
+  background-color: #333333; }

@@ -56,3 +56,14 @@
         position: absolute;
     }
 }
+
+@mixin responsive-bg-image($url) {
+    width: 100%;
+    height: auto;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: block;
+    }
+
