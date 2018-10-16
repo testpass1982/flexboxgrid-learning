@@ -77,6 +77,15 @@ body {
   margin: auto;
   padding: 10px; }
 
+.lowercase {
+  text-transform: lowercase; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.white-text {
+  color: white; }
+
 .highlighted {
   color: silver; }
 
@@ -646,4 +655,100 @@ body {
   padding-right: 39px; }
 
 .main-footer--container {
-  background-color: #333333; }
+  background-color: #333333;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.main-footer__member-naks--logo-image {
+  float: left;
+  padding-right: 20px; }
+
+.main-footer-naks-member-logo-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-bottom: 30px; }
+
+.main-footer__member-naks--logo--text {
+  color: #686868;
+  text-transform: uppercase; }
+
+.main-footer--naks-member--text {
+  color: #686868;
+  padding: 25px 0px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left; }
+
+.main-footer--horizontal-line {
+  border: none;
+  color: #686868;
+  background-color: #686868;
+  height: 2px;
+  margin-bottom: 20px; }
+
+.main-footer--menu-ul {
+  padding-inline-start: 0px; }
+
+.main-footer--menu-li {
+  list-style: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 26px; }
+  .main-footer--menu-li:hover {
+    text-shadow: 0 0 25px white; }
+
+.main-footer__subscribe--heading {
+  color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.28px; }
+
+.main-footer__subscribe-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.main-footer__subscribe-email--input {
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  background-color: #333333;
+  padding: 12px 19px;
+  color: white;
+  flex: 0 0 70%;
+  margin-bottom: 10px; }
+  .main-footer__subscribe-email--input::placeholder {
+    color: #a8a8a8; }
+
+.main-footer__subscribe--button {
+  padding: 12px 19px;
+  background-color: #888888;
+  border-radius: 3px;
+  flex: 0 0 30%;
+  margin-bottom: 10px; }
+
+/* The container for e-mail checkbox*/
+.main-footer__subscribe--label--container {
+  /*hide browser default checkbox */
+  /* On mouse-over, add a grey background color */ }
+  .main-footer__subscribe--label--container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .main-footer__subscribe--label--container:hover input ~ .main-footer__subscribe--label--checkmark {
+    background-color: #ccc; }
+  .main-footer__subscribe--label--container input:checked ~ .main-footer__subscribe--label--checkmark {
+    background-color: #2196F3; }
+
+.main-footer__subscribe--label--checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; }

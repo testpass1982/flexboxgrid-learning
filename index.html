@@ -12,50 +12,14 @@
     <link rel="stylesheet" href="/css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/w3.js"></script>
     <title>NAKS Smolensk main page</title>
 </head>
 
 <body>
     <main>
-        <div class="header__top-addr-line">
-            <div class="header__container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="header__top-addr-line-text"><i class="fas fa-map-marker-alt"></i>
-                            214000, город Смоленск, Краснинское шоссе 21, офис 2</div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="header__top-addr-line-text text-center highlighted">Время работы с
-                            09:00 до 19:00</div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="header__top-addr-line-text text-right text-sm-center">ООО
-                            "НАКС-Смоленск" в реестрах НАКС:
-                            <strong>АЦСТ-126 </strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header__white-sub-header">
-            <div class="row justify-content-between mb5">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 no-gutters">
-                    <div class="logo"><a href="#"><img src="/img/logo_for_white_header.png" alt="НАКС НАКС-Смоленск"></a></div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-                    <div class="subheader__org-phone">8 (4812) 21-40-72</div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-                    <div class="subheader__org-email">info@naks-smolensk.ru</div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-2">
-                    <div class="subheader__send-message-button">Оставить заявку</div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-2 no-gutters">
-                    <div class="subheader__edo-naks-login-button"><i class="fas fa-sign-in-alt"></i>
-                        Войти в систему</div>
-                </div>
-            </div> <!-- sub-header-end -->
-        </div>
+        <!--import-header.html-->
+        <div w3-include-html="header.html"></div>
         <!--header-end-->
         <div class="main-content">
             <div class="main-content__nav-menu">
@@ -146,7 +110,6 @@
             <!---info-container-->
         </div>
         <!--main-content-end-->
-
         <div class="content-container">
             <div class="container-fluid">
                 <div class="heading">Новости</div>
@@ -317,36 +280,11 @@
             </div>
         </div>
         <!-- --bewelder-adfooter-end-- -->
-
-        <!-- --footer-start-- -->
-        <div class="main-footer--container bsolid container-fluid">
-            <div class="content-container bsolid">
-                    <div class="row">
-                        <div class="col-3 bsolid">Лого</div>
-                        <div class="col-2 bsolid">Футер меню</div>
-                        <div class="col-3 bsolid">Подписка</div>
-                        <div class="col-2 offset-lg-2 bsolid">Контакты</div>
-                    </div><!--row-end-->
-                <!--main-footer-end-->
-                <div class="sub-footer--container bsolid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-lg-3 ">ООО АЦ НАКС Смоленск | Все права защищены</div>
-                        <div class="col-xs-12 col-sm-4 col-lg-2 ">Политика конфиденциальности</div>
-                        <div class="col-xs-12 col-sm-4 offset-lg-4 col-lg-3 ">Разработано в НАКС Медиа</div>
-                    </div><!--row-end-->
-                </div><!--subfooter-end-->
-            </div><!--content-container-end-->
-        </div>
-        <!-- --footer-end -->
-
-        <!-- ***the bottom of page below *** -->
-        <div class="content-container">
-            <div class="container-fluid bsolid h100">Some content</div>
-        </div>
-        <div class="content-container">
-            <div class="container-fluid bsolid h100">Footer</div>
-        </div>
+        <!--import-footer-html-->
+        <div w3-include-html="footer.html"></div>
+        <!--import-footer-html-end-->
     </main>
+    <script>w3.includeHTML()</script>
     <script src="main.js"></script>
 </body>
 
