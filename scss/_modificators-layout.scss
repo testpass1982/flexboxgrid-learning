@@ -29,6 +29,16 @@ body {
     margin-bottom: 5px;
 }
 
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.sm-mb15 {
+    @media screen and (max-width: 540px) {
+        margin-bottom: 15px;
+    }
+}
+
 .content-center {
     align-content: center;
 }
@@ -51,6 +61,11 @@ body {
 
 .text-sm-center {
     @media screen and (max-width: 575px) {
+        text-align: center;
+    }
+}
+.text-md-center {
+    @media screen and (max-width: 768px) {
         text-align: center;
     }
 }

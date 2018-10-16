@@ -1,0 +1,240 @@
+.main-footer--container {
+    background-color: #333333;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+}
+
+.main-footer__member-naks--logo-image {
+    float: left;
+    padding-right: 20px;
+}
+
+.main-footer-naks-member-logo-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    max-width: 590px;
+}
+.main-footer__member-naks--logo--text {
+    color: #686868;
+    text-transform: uppercase;
+}
+
+.main-footer--naks-member--text {
+    color: #686868;
+    padding: 25px 0px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.main-footer--horizontal-line {
+    border: none;
+    color: #686868;
+    background-color: #686868;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+.main-footer--menu-ul {
+    padding-inline-start: 0px; 
+}
+
+.main-footer--menu-li {
+    list-style: none;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 26px;
+    &:hover {
+        text-shadow: 1px 1px 20px white;
+        // text-decoration: underline;
+    }
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+        padding: 10px;
+    }
+}
+.main-footer__subscribe--heading {
+    color: #a8a8a8;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.28px;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.main-footer__subscribe-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.main-footer__subscribe-email--input {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    background-color: #333333;
+    padding: 12px 10px;
+    margin-right: 10px;
+    color: white;
+    flex-basis: 60%;
+
+    margin-bottom: 10px;
+        &::placeholder {
+            color: #a8a8a8;
+        }
+}
+
+.main-footer__subscribe--button {
+    padding: 12px 19px;
+    background-color: #888888;
+    border-radius: 3px;
+    flex-basis: 20%;
+    margin-bottom: 10px;
+    text-align: center;
+    &:hover {
+        box-shadow: inset 0 0 0 2px white;
+    }
+}
+
+/* Customize the label (the container) */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: silver;
+    /* Hide the browser's default checkbox */
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;            
+        }
+        /* On mouse-over, add a grey background color */
+        &:hover input ~.checkmark {
+            background-color: #727272;
+        }
+        // Change bgcolor of checked checkbox
+        input:checked ~.checkmark {
+            background-color: #2196F3;
+        }
+        //Show checkmark
+        input:checked ~.checkmark:after {
+            display: block;
+        }
+        //checkmark design
+        .checkmark:after {
+            left: 7px;
+            top: 3px;
+            width: 7px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+    /* Create the checkmark/indicator (hidden when not checked) */
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+  }
+
+  .main-footer__contacts-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .main-footer__contacts-phone-number {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.32px;
+    white-space: nowrap;
+    padding-bottom: 20px;
+  }
+  .main-footer__contacts-e-mail {
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    white-space: nowrap;
+    padding-bottom: 30px;
+  }
+  .main-footer__contacts-address {
+    color: #898989;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    padding-bottom: 10px;
+    flex: 1 0 100%;
+  }
+  .main-footer__contacts-address-link {
+    color: #868686;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: underline;
+    letter-spacing: 0.24px;
+    padding-bottom: 10px;
+    flex: 1 1 100%;
+  }
+
+  .main-footer__contacts-send-message--button {
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 13px 17px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    text-align: center;
+    flex: 0 0 30%;
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+  }
+
+  .sub-footer {
+      background-color: #3c3c3c;
+      color: #727272;
+  }
+  .sub-footer__naks-media-logo--container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+        @media screen and (max-width: 992px) {
+            justify-content: center;
+        }
+  }
