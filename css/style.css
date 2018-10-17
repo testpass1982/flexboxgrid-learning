@@ -37,6 +37,9 @@ body {
 .mb10 {
   margin-bottom: 10px; }
 
+.mlr10 {
+  margin: 0px 10px; }
+
 @media screen and (max-width: 540px) {
   .sm-mb15 {
     margin-bottom: 15px; } }
@@ -874,3 +877,119 @@ body {
   @media screen and (max-width: 992px) {
     .sub-footer__naks-media-logo--container {
       justify-content: center; } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  /* Could be more or less, depending on screen size */
+  border: 1px solid #fffde5;
+  border-radius: 3px; }
+
+/* The Close Button */
+.close_btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close_btn:hover,
+.close_btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.modal__header_continer {
+  padding-top: 50px;
+  padding-left: 88px;
+  background-color: #fffde5;
+  padding-right: 47px;
+  padding-bottom: 50px; }
+
+.modal__header_heading {
+  color: #0092c4;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 1.36px; }
+
+.modal__header_text {
+  padding: 22px 0px;
+  color: #4b4b4b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1.56px; }
+
+.modal__form_container {
+  padding-top: 50px;
+  padding-left: 88px;
+  padding-right: 20px;
+  background-color: white;
+  width: 100%; }
+  @media screen and (max-device-width: 425px) {
+    .modal__form_container {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+.modal__form_input_container {
+  max-width: 350px;
+  padding-bottom: 70px; }
+
+.modal__form_input_label {
+  color: #464646;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.modal__form_input {
+  width: 100%;
+  height: 33px;
+  border-radius: 3px;
+  border: 1px solid #d0d0d0;
+  padding: 0px 10px; }
+
+.modal__form_textarea {
+  max-width: 350px;
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  min-height: 130px;
+  padding: 10px 10px;
+  margin-bottom: 10px; }
+
+.theme-gray {
+  color: #0092c4; }
+
+.form__button {
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  background-color: #3eb5f1;
+  padding: 10px 20px;
+  max-width: 140px; }
+  .form__button:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 26, 255, 0.5); }

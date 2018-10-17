@@ -21,5 +21,7 @@ gulp.task('sass', function(){
 
 gulp.task('watch', ['browser-sync'], function() {
     gulp.watch("scss/*.scss", ['sass']);
+    gulp.watch("js/*.js").on('change', bs.reload);
+    gulp.watch("includes/*.html").on('change', bs.reload);
     gulp.watch("*.html").on('change', bs.reload);
 })

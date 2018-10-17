@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/checkbox-style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="/js/w3.js"></script>
     <title>NAKS Smolensk main page</title>
 </head>
@@ -20,7 +21,7 @@
 <body>
     <main>
         <!--import-header.html-->
-        <div w3-include-html="header.html"></div>
+        <div w3-include-html="includes/header.html"></div>
         <!--header-end-->
         <div class="main-content">
             <div class="main-content__nav-menu">
@@ -258,8 +259,9 @@
                     <div class="col-xs-12 col-lg-4">
                         <div class="footer__ask-question--area--container container disp-flex align-items-start">
                             <div class="footer__do-you-have-a-question--heading">Возникли вопросы?</div>
-                            <div class="footer__ask-question--button">Задать вопрос</div>
-                            <div class="footer__use-a-question-form--text">Воспользуйтесь формой <b>"Задать вопрос"</b> и наш специалист ответит Вам в течение 5 минут</div>
+                            <div class="footer__ask-question--button" id="button_ask_question">Задать вопрос</div>
+                            <div class="footer__use-a-question-form--text">Воспользуйтесь формой <b>"Задать вопрос"</b>
+                                и наш специалист ответит Вам в течение 5 минут</div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-4">
@@ -272,9 +274,11 @@
                     </div>
                     <div class="col-xs-12 col-lg-4">
                         <div class="footer__welding-magazine--area--container container disp-flex align-items-start">
-                            <div class="footer__welding-magazine-area--logo"><img src="/img/welder-magazine-logo.png" alt="Журнал Сварка и диагностика"></div>
+                            <div class="footer__welding-magazine-area--logo"><img src="/img/welder-magazine-logo.png"
+                                    alt="Журнал Сварка и диагностика"></div>
                             <div class="footer__welding-magazine-area--heading">svarka.naks.ru</div>
-                            <div class="footer__welding-magazine-area--sub-heading">Научно-технический и производственный журнал по сварке, контролю и диагностике</div>
+                            <div class="footer__welding-magazine-area--sub-heading">Научно-технический и
+                                производственный журнал по сварке, контролю и диагностике</div>
                         </div>
                     </div>
                 </div>
@@ -282,11 +286,18 @@
         </div>
         <!-- --bewelder-adfooter-end-- -->
         <!--import-footer-html-->
-        <div w3-include-html="footer.html"></div>
+        <div w3-include-html="/includes/footer.html"></div>
+        <div w3-include-html="/includes/modal-ask-question.html"></div>
+        <div w3-include-html="/includes/modal-send-message.html"></div>
+        
+        <!-- The Modal -->
+        
         <!--import-footer-html-end-->
     </main>
+    
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     <script>w3.includeHTML()</script>
-    <script src="main.js"></script>
 </body>
 
 </html>
