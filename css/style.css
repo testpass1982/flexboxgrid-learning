@@ -100,6 +100,9 @@ body {
 .white-text {
   color: white; }
 
+.vh20 {
+  max-height: 20vh; }
+
 .highlighted {
   color: silver; }
 
@@ -901,13 +904,17 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  margin-top: 10vh;
+  position: relative;
+  margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
   /* Could be more or less, depending on screen size */
   border: 1px solid #fffde5;
   border-radius: 3px; }
+  @media screen and (max-width: 720px) {
+    .modal-content {
+      max-width: 95%; } }
 
 /* The Close Button */
 .close_btn {
@@ -970,7 +977,8 @@ body {
   height: 33px;
   border-radius: 3px;
   border: 1px solid #d0d0d0;
-  padding: 0px 10px; }
+  padding: 0px 10px;
+  margin-bottom: 10px; }
 
 .modal__form_textarea {
   max-width: 350px;
@@ -988,8 +996,26 @@ body {
   text-align: center;
   color: white;
   border-radius: 3px;
-  background-color: #3eb5f1;
+  background-color: #2196F3;
   padding: 10px 20px;
   max-width: 140px; }
   .form__button:hover {
-    box-shadow: 0px 0px 15px 0px rgba(0, 26, 255, 0.5); }
+    box-shadow: 0px 0px 20px 0px rgba(33, 150, 243, 0.8); }
+
+.modal__send_message_container {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */ }

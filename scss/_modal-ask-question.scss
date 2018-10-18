@@ -14,12 +14,16 @@
 
 /* Modal Content/Box */
 .modal-content {
-    margin-top: 10vh;
+    position: relative;
+    margin-top: 5vh;
     margin-left: auto; 
     margin-right: auto;
     max-width: 700px; /* Could be more or less, depending on screen size */
     border: 1px solid #fffde5;
     border-radius: 3px;
+     @media screen and (max-width: 720px) {
+        max-width: 95%;
+     }
     
 }
 
@@ -90,6 +94,7 @@
     border-radius: 3px;
     border: 1px solid #d0d0d0;
     padding: 0px 10px;
+    margin-bottom: 10px;
 }
 
 .modal__form_textarea {
@@ -109,11 +114,11 @@
     text-align: center;
     color: white;
     border-radius: 3px;
-    background-color: #3eb5f1;
+    background-color: #2196F3;
     padding: 10px 20px;
     max-width: 140px;
         &:hover {
-            box-shadow: 0px 0px 15px 0px rgba(0, 26, 255, 0.5);
+            box-shadow: 0px 0px 20px 0px rgba(33, 150, 243, 0.8);
         }
 }
 

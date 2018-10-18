@@ -1,12 +1,13 @@
 window.onload = function () {
-
+    //all buttons should be added here
     buttons = {
         "button_ask_question": ['modal_ask_question', 'close-modal-button'],
-        "button_send_message": ['modal_send_message', 'close-modal-button']
+        "button_send_message": ['modal_send_message', 'close-modal-send-message']
     }
-
+    //handler for buttons on main page
     window.onclick = function(event) {
         if (event.target.id !="undefined" && event.target.id in buttons) {
+            // console.log(event.target.id);
             var modalshadow = document.getElementById(buttons[event.target.id][0]);
             var crossbutton = document.getElementById(buttons[event.target.id][1]);
             
