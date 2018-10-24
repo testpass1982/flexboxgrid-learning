@@ -13,17 +13,12 @@
 .main-content__nav-menu--menu-item {
     text-align: center;
     padding: 30px 20px;
-    // margin-bottom: 10px;
-    // line-height: 24px;
-    // letter-spacing: 1.84px;
     font-size: 16px;
     border-bottom: 3px solid silver;
     white-space: nowrap;
     flex: 1 1;
     &:hover {
         border-bottom: 3px solid #2D7DE6;
-        // background-color: rgba(255, 217, 75, 1);
-        // color: #2D7DE6;
         cursor: pointer;
     }
     @media screen and (max-width: 900px) {
@@ -52,12 +47,13 @@
 }
 
 .main-content__nav-menu--container {
-    // padding-bottom: 5px; 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 30px;
     @media screen and (max-width: 900px) {
+        margin-left: -15px;
+        margin-right: 15px;
         background-color: rgba(255, 255, 255, 0.3);
         position: relative;
         flex-flow: column wrap;
@@ -93,6 +89,7 @@
         }
         @media screen and (max-width: 900px) {
             margin-top: 20px;
+            // margin-right: 20px;
         }
         
 }
@@ -106,7 +103,7 @@
     width: 100%;
     line-height: 34px;
     color: $blue-primary;
-    margin: 0px 10px 0px 0px;
+    // margin: 0px 0px 0px 0px;
     background: rgba(255, 255, 255, 0.8);
     padding: 5px 5px 5px 40px;
     border: none;

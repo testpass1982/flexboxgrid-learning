@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   display: flex; }
 
@@ -189,7 +188,6 @@ body {
   width: 100%;
   padding-bottom: 20px;
   padding-left: 10px;
-  padding-right: 10px;
   padding-top: 20px; }
 
 .subheader__send-message-button {
@@ -271,6 +269,8 @@ body {
   margin-bottom: 30px; }
   @media screen and (max-width: 900px) {
     .main-content__nav-menu--container {
+      margin-left: -15px;
+      margin-right: 15px;
       background-color: rgba(255, 255, 255, 0.3);
       position: relative;
       flex-flow: column wrap; } }
@@ -310,7 +310,6 @@ body {
   width: 100%;
   line-height: 34px;
   color: #074DA7;
-  margin: 0px 10px 0px 0px;
   background: rgba(255, 255, 255, 0.8);
   padding: 5px 5px 5px 40px;
   border: none; }
@@ -351,8 +350,15 @@ body {
     bottom: 0;
     left: 0;
     background-image: linear-gradient(-27deg, #919bad 0%, #182446 100%);
-    /* Style for "Градиент поверх главной картинки" */
     opacity: .6; }
+  @media screen and (max-width: 500px) {
+    .main-content {
+      background-image: none; }
+      .main-content:before {
+        background-image: linear-gradient(-27deg, #074da7 20%, #1272d1 100%);
+        opacity: .6; }
+      .main-content .main-content__org_info--naks-member-text {
+        color: white; } }
 
 .main_content__org_info--container {
   width: 100%;
@@ -408,7 +414,7 @@ body {
 
 .main-content__org_info--attention {
   color: #074DA7;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: left;
   line-height: 150%;
   padding-top: 15px;
@@ -417,11 +423,12 @@ body {
   padding-bottom: 15px;
   margin-left: 10px;
   margin-right: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
   flex: 2 1 60%; }
   .main-content__org_info--attention:hover {
-    box-shadow: inset 0px 0px 0px 2px #FFD07B;
-    border-radius: 3px; }
+    border-radius: 3px;
+    background-color: #FFD07B; }
 
 .main-content__org_name {
   font-size: 28px;
