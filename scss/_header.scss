@@ -39,7 +39,7 @@
 .subheader__org-phone {
     font-weight: bold;
     padding: 0px 10px;
-    line-height: 44px;
+    line-height: 30px;
     text-align: center;
     white-space: nowrap;
 }
@@ -47,42 +47,57 @@
 .subheader__org-email {
     color: #787878;
     padding: 0px 10px;
-    line-height: 44px;
-    white-space: nowrap;
+    line-height: 30px;
+    white-space: wrap;
     text-align: center;
 }
 
+.header-buttons-container {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
 .subheader__send-message-button {
-    text-align: center;
-    white-space: nowrap;
-    padding: 0px 10px;
     border-style: solid;
     border-color: rgb(121, 121, 121);
     border-width: 1px;
     border-radius: 3px;
-    height: 44px;
+    text-align: center;
+    white-space: nowrap;
     line-height: 44px;
-    @media screen and (max-width: 767px) {
-        margin-bottom: 5px;
-    }
+    flex: 1 1;
+    margin: 10px;
+    // @media screen and (max-width: 767px) {
+    //     margin-bottom: 5px;
+    // }
         &:hover {
             background-color: rgb(121, 121, 121);
             color: white;
         }
-
-}
-
-.subheader__edo-naks-login-button {
-    border: solid 1px rgb(1, 115, 204);
-    border-radius: 3px;
-    height: 44px;
-    padding: 0px 10px;
-    line-height: 44px;
-    text-align: center;
-    white-space: nowrap;
-    color: #0173cc;
+        @media screen and (max-width: 450px) {
+            flex: 1 1 100%;
+        }
+        
+    }
+    
+    .subheader__edo-naks-login-button {
+        border: solid 1px rgb(1, 115, 204);
+        border-radius: 3px;
+        line-height: 44px;
+        text-align: center;
+        white-space: nowrap;
+        color: #0173cc;
+        flex: 1 1;
+        margin: 10px;
         &:hover {
             background-color: rgb(1, 115, 204);
             color: white;
         }
+        @media screen and (max-width: 450px) {
+            flex: 1 1 100%;
+        }
 }
+

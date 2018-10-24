@@ -1,6 +1,3 @@
-$("#click").click(function() {
-    $("#hiding").toggle();
-})
+// console.log('mainjs loaded');
 
-console.log('test js work');
-// include modal to html
+

@@ -21,103 +21,21 @@
 <body>
     <main>
         <!--import-header.html-->
+        <div class="fixed-fix">Fix</div>
         <div w3-include-html="includes/header.html"></div>
         <!--header-end-->
         <div class="main-content">
-            <div class="main-content__nav-menu">
-                <div class="row align-items-center">
-                    <!--nav menu-start-->
-                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                        <div class="main-content__nav-menu--container">
-                            <div class="row justify-content-between">
-                                <div class="col-xs-6 col-sm-6 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">ГЛАВНАЯ</div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">НОВОСТИ</div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">О ЦЕНТРЕ</div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">УСЛУГИ</div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">РУКОВОДЯЩИЙ
-                                        СОСТАВ</div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">ДОКУМЕНТЫ</div>
-                                </div>
-                                <div class="col-xs-6 col-sm-12 col-lg underlined">
-                                    <div class="main-content__nav-menu--menu-item text-center">КОНТАКТЫ</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--container-end-->
-                    </div>
-                    <!--col-nav-menu-end-->
-                    <div class="col-sm-12 col-md-12 col-lg-4 offset-xl-2 col-xl-2">
-                        <div class="pl5 pr5">
-                            <input placeholder="Поиск" type="text" class="main-content__search-input">
-                            <span class="fa fa-search main_content__search_icon"></span>
-                        </div>
-                    </div>
-                </div>
-                <!--row-end-->
-            </div>
+                <div w3-include-html="includes/navbar.html"></div>
             <!--nav-menu-end-->
-            <div class="main_content__org_info--container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5">
-                        <div class="main_content__org_info--naks-logo-image mb5">
-                            <img src="/img/member-of-naks-logo.png" alt="Член СРО Ассоциация НАКС">
-                        </div>
-                        <div class="main-content__org_info--naks-member-text">
-                            Организация допущена к выполнению работ по аттестации сварочного производства <br>
-                            <span class="naks-site-addr"><b>www.naks.ru</b></span>
-                        </div>
-                        <div class="main-content__org_name">АЦ НАКС Смоленск</div>
-                        <div class="main-content__org_info">Осуществляет деятельность в области аттестации сварочного
-                            производства САСв с 2016 года. Центр аккредитован в Национальном Агентстве Контроля Сварки
-                            (НАКС)</div>
-                        <div class="main-content__org_info">Организация имеет собственную лабораторию неразрушающих
-                            методов контроля современный сварочный участок. В работе центра заняты квалифицированные и
-                            опытные сотрудники в области сварки и неразрушающего контроля</div>
-                        <div class="main-content__org_info--button">Подробнее об организации <i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <!--first-col-end-->
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
-                        <div class="disp-flex flex-start">
-                            <div class="main-content__org_info--activities_header">УСЛУГИ ЦЕНТРА</div>
-                            <div class="main-content__org_info--attention"><i class="fas fa-exclamation-circle pr5"></i>Информация
-                                для заявителей
-                                <div>Профессиональные стандарты в области сварки</div>
-                            </div>
-
-                            <div class="main-content__org_info--org-activities">Аттестация специалистов сварочного
-                                производства</div>
-                            <div class="main-content__org_info--org-activities">Аттестация сварщиков</div>
-                            <div class="main-content__org_info--org-activities">Аттестация сварочного оборудования</div>
-                            <div class="main-content__org_info--org-activities">Аттестация сварочных технологий</div>
-                            <div class="main-content__org_info--org-activities">Оценка квалификации в области сварки</div>
-
-                        </div>
-                        <!--flex-conteiner-end-->
-                    </div>
-                    <!--second-col-end-->
-                </div>
-                <!--row-end-->
-            </div>
-            <!---info-container-->
+                <div w3-include-html="includes/main-content.html"></div>
         </div>
         <!--main-content-end-->
         <div class="content-container">
             <div class="container-fluid">
                 <div class="heading">Новости</div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-lg-4">
+            <div class="row no-margins">
+                <div class="col-xs-12 col-lg-4 no-gutters">
                     <div class="news__tags--container">
                         <div class="news__date">09 Июля 2018</div>
                         <div class="news__tag"><i class="fas fa-hashtag"></i> Новости НАКС</div>
@@ -134,7 +52,7 @@
                     </div>
                 </div>
                 <!--col1-end-->
-                <div class="col-xs-12 col-lg-4">
+                <div class="col-xs-12 col-lg-4 no-gutters">
                     <div class="news__tags--container">
                         <div class="news__date">09 Июля 2018</div>
                         <div class="news__tag"><i class="fas fa-hashtag"></i> Новости нашего центра</div>
@@ -148,7 +66,7 @@
                     </div>
                 </div>
                 <!--col2-end-->
-                <div class="col-xs-12 col-lg-4">
+                <div class="col-xs-12 col-lg-4 no-gutters">
                     <div class="news__tags--container">
                         <div class="news__date">09 Июля 2018</div>
                         <div class="news__tag"><i class="fas fa-hashtag"></i> Новости СПКС</div>
@@ -164,8 +82,8 @@
                 <!--col3-end-->
             </div>
             <!--row-end---->
-            <div class="row">
-                <div class="col-xs-12 col-lg-4">
+            <div class="row no-margins">
+                <div class="col-xs-12 col-lg-4 no-gutters">
                     <div class="news__tags--container">
                         <div class="news__date">09 Июля 2018</div>
                         <div class="news__tag"><i class="fas fa-hashtag"></i> Новости СПКС</div>
@@ -177,7 +95,7 @@
                         <div class="news__news-record-with-picture--button">Подробнее <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-4">
+                <div class="col-xs-12 col-lg-4 no-gutters">
                     <div class="news__tags--container">
                         <div class="news__date">09 Июля 2018</div>
                         <div class="news__tag"><i class="fas fa-hashtag"></i> Новости СПКС</div>
@@ -189,7 +107,7 @@
                         <div class="news__news-record-with-picture--button">Подробнее <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-4">
+                <div class="col-xs-12 col-lg-4 no-gutters">
                     <div class="news__tags--container">
                         <div class="news__date">09 Июля 2018</div>
                         <div class="news__tag"><i class="fas fa-hashtag"></i> Новости СПКС</div>
@@ -205,8 +123,8 @@
             <div class="container-fluid">
                 <div class="heading">Статьи</div>
             </div>
-            <div class="row">
-                <div class="col-xs12 col-lg-4">
+            <div class="row no-margins">
+                <div class="col-xs12 col-lg-4 no-gutters">
                     <div class="news__article-record-container">
                         <div class="news__tags--container">
                             <div class="news__date">09 Июля 2018</div>
@@ -221,7 +139,7 @@
 
                     </div>
                 </div>
-                <div class="col-xs12 col-lg-4">
+                <div class="col-xs12 col-lg-4 no-gutters">
                     <div class="news__article-record-container">
                         <div class="news__tags--container">
                             <div class="news__date">09 Июля 2018</div>
@@ -255,8 +173,8 @@
         <!--bewelder-ad-footer-start-->
         <div class="footer__bewelder-ad-footer">
             <div class="content-container">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4">
+                <div class="row no-margins">
+                    <div class="col-xs-12 col-lg-4 no-gutters">
                         <div class="footer__ask-question--area--container container disp-flex align-items-start">
                             <div class="footer__do-you-have-a-question--heading">Возникли вопросы?</div>
                             <div class="footer__ask-question--button" id="button_ask_question">Задать вопрос</div>
@@ -264,7 +182,7 @@
                                 и наш специалист ответит Вам в течение 5 минут</div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-4">
+                    <div class="col-xs-12 col-lg-4 no-gutters">
                         <div class="footer__bewelder--area--container container disp-flex align-items-start">
                             <div class="footer__bewelder-area--heading">Работа в области сварки</div>
                             <div class="footer__bewelder-area-find-job--button">Найти работу</div>
@@ -272,7 +190,7 @@
                             <div class="footer__bewelder-area-post-vacancy--url">или разместить вакансию <i class="fas fa-arrow-right"></i></div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-4">
+                    <div class="col-xs-12 col-lg-4 no-gutters">
                         <div class="footer__welding-magazine--area--container container disp-flex align-items-start">
                             <div class="footer__welding-magazine-area--logo"><img src="/img/welder-magazine-logo.png"
                                     alt="Журнал Сварка и диагностика"></div>

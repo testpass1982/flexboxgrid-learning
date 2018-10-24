@@ -90,6 +90,10 @@ body {
     align-content: flex-start;
 }
 
+.flex-stretch {
+    align-items: stretch
+}
+
 .greedy {
     flex-grow: 1;
 }
@@ -115,4 +119,9 @@ body {
 
 .vh20 {
     max-height: 20vh;
+}
+
+.no-margins {
+    margin-left: 0px;
+    margin-right: 0px;
 }

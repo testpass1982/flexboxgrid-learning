@@ -1,3 +1,4 @@
+@import "_variables.scss";
 .main-content {
     color: white;
     position: relative;
@@ -6,6 +7,8 @@
     background: url(/img/main_cont__cont-bg-image.jpg) center center no-repeat;
     background-size: cover;
     margin-bottom: 30px;
+    // padding-left: 5px;
+    // padding-right: 5px;
         &:before {
             content : '';
             position: absolute;
@@ -18,60 +21,14 @@
             opacity: .6;
         }
 }
-.main-content__nav-menu {
-    width: 100%;
-    max-width: $cont-width;
-    margin: auto;
-}
-
-.main-content__nav-menu--menu-item {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 3px;
-    line-height: 24px;
-    letter-spacing: 0.84px;
-    font-size: 14px;
-    // border-bottom: 2px solid silver;
-    white-space: nowrap;
-
-
-
-        @media screen and (max-width: 1252px) {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        
-
-}
-
-.main-content__nav-menu--container {
-    padding-bottom: 5px; 
-}
-
-.main-content__search-input {
-    position: relative;
-    width: 100%;
-    line-height: 34px;
-    color: white;
-    margin: 0px 10px 0px 0px;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 5px 5px 5px 30px;
-    border: none;
-    }
-.main_content__search_icon {
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    &::placeholder {   //почему-то не работает, надо исправить
-        color: red;
-    }
-}
 
 .main_content__org_info--container {
     width: 100%;
     max-width: $cont-width;
     margin: auto;
     padding-top: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .main_content__org_info--naks-logo-image {
@@ -112,7 +69,9 @@
         }
 
         &:hover {
-            box-shadow: inset 0px 0px 0px 2px #fff;
+            // box-shadow: inset 0px 0px 0px 1px #FFE37A;
+            background-color: $yellow-secondery;
+            color: $blue-primary;
         }
 }
 
@@ -120,22 +79,29 @@
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 37px;
+    padding-right: 15px;
     padding-left: 15px;
     margin-left: 10px;
+    // flex: 2 1;
+    // flex-basis: 50%;
 }
 
 .main-content__org_info--attention {
+    color: $blue-primary;
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: left;
     line-height: 150%;
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-right: 25px;
     padding-bottom: 15px;
     margin-left: 10px;
     margin-right: 5px;
     margin-bottom: 10px;
+    // flex-basis: 100%;
+    flex: 2 1 60%;
         &:hover {
-            box-shadow: inset 0px 0px 0px 2px #fff;
+            box-shadow: inset 0px 0px 0px 2px $yellow-secondery;
             border-radius: 3px;
         }
 }

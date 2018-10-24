@@ -21,7 +21,30 @@ window.onload = function () {
                 modalshadow.style.display = "none";
             });
         }
+
     }
+    burger = document.getElementById('burger');
+    var menu_items = document.getElementsByClassName('main-content__nav-menu--menu-item');
+    burger.onclick = function () {
+            // console.log('burger');
+            // var container = document.getElementsByClassName('main-content__nav-menu--container');
+            for (var i = 1 ; i<menu_items.length; i++) {
+                if (menu_items[i].style.display == 'block') {
+                    menu_items[i].style.display = 'none';
+                } else {
+                    menu_items[i].style.display = 'block';
+                }
+            }
+            // menu_item.style.display = 'block';
+        }
+
+    //     window.onresize = function() {
+    //         if (window.outerWidth>900 && menu_items[1].style.display=='none') {
+    //             for (var i = 0 ; i<menu_items.length; i++) {
+    //                 menu_items[i].style.display = 'block';
+    //         } 
+    //     }
+    // }
     // how to iterate through all elements of page that have an id
     // var elements = document.getElementsByTagName("*");
     // var len = elements.length;
