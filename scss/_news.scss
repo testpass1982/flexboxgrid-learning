@@ -147,6 +147,13 @@
         }  
 }
 
+.news__button--read-more {
+    @media screen and (max-device-width : 576px) {
+         width: 100%;
+    }    
+}
+
+
 
 
 

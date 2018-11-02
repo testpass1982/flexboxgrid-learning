@@ -25,13 +25,13 @@
         padding: 20px;
         text-align: left;
         border: none;
-        background-color: $yellow-secondery;
-        color: #2D7DE6;
+        background-color: $blue-primary;
+        color: white;
         font-weight: bold;
         &:hover {
             border: none;
-            background-color: $yellow-primary;
-            color: $blue-primary;
+            // background-color: $yellow-primary;
+            // color: $blue-primary;
         }
         &:not(:first-child) {
             display: none;
